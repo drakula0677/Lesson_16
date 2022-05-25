@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 16 - Курс Зима 2022</title>
+</head>
+<body>
+	<div class="wrappr">
+		<header class="header"></header>
+		<main class="main">
+			<div class="appointment">
+				<div class="appointment__container">
+					<div class="appointment__title">Make an appointment</div>
+					<form action="#" class="appointment__body">
+						<div class="appointment__items">
+							<div class="appointment__text">
+								<input type="text" class="appointment__input" required placeholder="Name" name="username"> 
+							</div>
+							<div class="appointment__email">
+								<input type="email" class="appointment__input" required placeholder="Email" name="email"> 
+							</div>
+							<div class="appointment__tel">
+								<input type="tel" class="appointment__input" required placeholder="Phone Number" name="phone"> 
+							</div>
+							<select class="appointment__select"  name="select">
+								<option class="size" value="1">Select Service</option>
+								<option value="2">Пункт №2</option>
+								<option value="3">Пункт №3</option>
+								<option value="4">Пункт №4</option>
+							</select>
+							</div>
+							<div class="appointment__footer">
+								<textarea class="appointment__textarea" autocomplete="off" placeholder="Tell us about your puppers include his/her name"></textarea>
+								<button class="appointment__button">Make an Appointment</button>
+							</div>
+					</form>
+				</div>
+			</div>
+			<div class="registered">
+				<div class="registered__wrap">
+					<div class="registered__container">
+						<form action="#" class="registered__body">
+							<div class="registered__title title-style">Registered Customers</div>
+							<div class="registered__sub-title">If you have an account, sign in with your email address.</div>
+							<div class="registered__items">
+								<div class="registered__item">
+									<label for="email" class="registered__label label-style">Email <span>*</span></label>
+									<input autocomplete="off" placeholder="Your Name" required id="email" value="" name="email" type="email" class="registered__form">
+								</div>
+								<div class="registered__item">
+									<label for="pass" class="registered__label label-style">Password <span>*</span></label>
+									<input autocomplete="off" placeholder="Your Password" required id="pass" value="" name="email" type="password" class="registered__form">
+								</div>
+							</div>
+							<div class="registered__buttons">
+								<button type="submit" class="registered__button">Sign In</button>
+								<a href="#" class="registered__link">Forgot Your Password?</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="summary">
+				<div class="summary__container">
+					<form action="#" class="summary__body">
+						<div class="summary__title title-style">Summary</div>
+						<div class="summary__sub-title">Estimate Shipping and Tax</div>
+						<div class="summary__text">Enter your destination to get a shipping estimate.</div>
+						<div class="summary__items">
+							<div class="summary__item">
+								<label class="summary__label label-style" for="country">Country</label>
+								<select name="country" id="country" class="summary__select">
+									<option value="1">Austria</option>
+									<option value="2">Norway</option>
+									<option value="3">Portugal</option>
+									<option value="4">Japan</option>
+								</select>
+							</div>
+							<div class="summary__item">
+								<label class="summary__label label-style" for="state-province">State/Province</label>
+								<input autocomplete="off" required id="state-province" name="state-province" type="text" class="summary__form">
+							</div>
+							<div class="summary__item">
+								<label class="summary__label label-style" for="state-province">Zip/Postal Code</label>
+								<input autocomplete="off" required id="postal-code" name="postal-code" type="text" class="summary__form">
+							</div>
+							<div class="summary__radiobuttons">
+								<div class="summary__label label-style">Standard Rate</div>
+								<div class="summary__radiobutton">
+									<input id="rate-1" autocomplete="off" type="radio" checked name="delivery" class="summary__radio">
+									<label for="rate-1" class="summary__price">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</label>
+								</div>
+								<div class="summary__label label-style">Pickup from store</div>
+								<div class="summary__radiobutton">
+									<input id="rate-2" autocomplete="off" type="radio" checked name="delivery" class="summary__radio">
+									<label for="rate-2" class="summary__price">1234 Street Adress City Address, 1234 $0.00</label>
+								</div>
+							</div>
+							<div class="summary__discount">
+								<div class="summary__sub-title">Apply Discount Code</div>
+								<label class="summary__label label-style" for="enter">Enter discount code</label>
+								<input autocomplete="off" placeholder="Enter discount code" required id="enter" value="" name="discount" type="text" class="summary__input">
+								<div class="summary__buttons">
+									<button type="submit" class="summary__button">Apply Discount</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+</html>
